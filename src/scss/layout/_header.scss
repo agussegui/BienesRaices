@@ -1,0 +1,81 @@
+.no-webp .inicio{
+    background-image: url(../img/header.jpg);
+}
+.webp .inicio{
+
+    background-image: url(../img/header.webp);
+}
+.navegacion{
+    &.admin{
+        display: none;
+    }
+}
+.header{
+    background-color: $grisOscuro;
+    padding: 1rem 0 3rem 0;
+    margin: 2rem 10rem 2rem 10rem;
+    border-radius: 20px;
+    
+    .header-resumen{
+        display: flex;
+        bottom: 2rem;
+        .header-resumen-box{
+            margin: 2rem;
+            .header-resumen-title{
+                color: $blanco;
+                font-weight: bold;
+            }
+            .header-resumen-paragraph{
+                font-size: 1.5rem;
+                color: $blanco;
+                opacity: 0.5;
+            }
+        }
+    }
+    .header-box{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 10px;
+        margin-top: 60px;
+        .header-box-button{
+            display: flex;
+            justify-content: flex-end;
+            margin: -28px;
+            width: 56px;
+            height: 56px;
+            background: $azul;
+            border: 0;
+            border-radius: 100%;
+            outline: none;
+            box-shadow: 0 1px 3px rgba(black,.2);
+            cursor: pointer;
+            
+        }
+    }
+    
+
+    &.inicio{
+        background-position: center center;
+        background-size: cover;
+
+
+        @include tablet{
+            min-height: 15rem;
+        }
+
+        .contenido-header{
+            @include tablet{
+                min-height: 60rem;
+            }
+        }
+    }
+}
+
+h1{
+    text-align: center;
+    color: $blanco;
+    font-weight: $bold;
+    line-height: 2;
+    max-width: 70rem;
+}

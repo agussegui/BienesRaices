@@ -1,0 +1,66 @@
+.main-login{
+    background-color: $azul;
+    
+}
+h1{
+    margin: 0;
+    padding: 30px;
+    
+}
+
+
+
+    
+.box-login{
+    background-color: white;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .form-login{
+        border: 1px solid rgb(46, 60, 88);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        width: 50%;
+        margin-top: 4rem;
+
+        h2{
+            width: 100%;
+            background-color: rgb(46, 60, 88);
+            margin: 0;
+            color: white;
+            padding: 25px;
+        }
+        label{
+            padding: 15px;
+            color: rgb(0, 0, 0);
+            font-size: 25px;
+            
+        }
+        
+        .input-login{
+            padding: 15px;
+            border-radius: 5px;
+            border: 0px solid white;
+            background-color: $gris;
+            margin: 10px;
+            width: 50%;
+            &:hover{
+                transform: all 3s ease-in-out;
+                background-color: rgb(226, 226, 226);
+            }
+            
+        }
+
+    }
+
+    .botton-login{
+        margin: 30px;
+    }
+}
+
+
+

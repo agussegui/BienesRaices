@@ -1,0 +1,25 @@
+@include tablet{
+    .iconos-nosotros{
+        @include grid(4,2rem);
+        margin: top 7rem;;
+    }
+}
+.icono{
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px 2px  #eaeaea;
+    img{
+        height: 10rem;
+    }
+    h3{
+        font-weight: bold;
+    }
+    .icono-paragraph{
+        color: #9c9b9b;
+        opacity: 1;
+    }
+}
